@@ -43,16 +43,19 @@ async function loadNasaImage(date = '') {
         if (data.media_type === 'image') {
             nasaImage.src = data.url;
             nasaImage.alt = data.title;
+            nasaTitle.textContent = data.title; // Mostramos el título
             nasaDescription.textContent = data.explanation;
         } else {
             nasaImage.src = '';
+            nasaTitle.textContent = '';
             nasaDescription.textContent = 'No hay imagen disponible para esta fecha.';
         }
-
     } catch (error) {
+        nasaTitle.textContent = '';
         nasaDescription.textContent = 'Hubo un error al cargar la imagen.';
         console.error(error);
-    } finally {
+    }
+    finally {
         // Ocultar el loader y mostrar la imagen una vez cargada
         nasaImage.onload = hideLoader;
         nasaImage.onerror = hideLoader; // También ocultar el loader si hay un error al cargar la imagen

@@ -82,6 +82,8 @@ input[type="date"], button {
 
 /* Diseño moderno del botón */
 button {
+    margin-top: 15px; /* Añadir separación entre el botón y el título */
+    margin-bottom: 20px; /* Añadir separación entre el botón y el título */
     background-color: #555; /* Color gris más claro para el botón */
     cursor: pointer;
     
@@ -107,9 +109,12 @@ input[type="date"]:focus {
 }
 
 /* Contenedor de la imagen */
-#imageContainer {
-    margin-top: 30px;
-    text-align: center;
+
+#imageContainer, #nasaTitle {
+    color: #ffffff; /* Blanco */
+    font-size: 1.5rem;
+    margin-bottom: 40px; /* Separar el título de la imagen */
+    text-align: center; /* Centrar el título */
 }
 
 #nasaImage {
@@ -123,7 +128,7 @@ input[type="date"]:focus {
 #nasaDescription {
     margin-top: 10px;
     font-size: 1rem;
-    color: #bbbbbb; /* Texto gris más suave */
+    color: #bbbbbb; /* Texto gris suave */
     text-align: justify;
 }
 
