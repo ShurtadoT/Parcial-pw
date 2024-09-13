@@ -10,17 +10,15 @@ body {
 
 /* Header */
 header {
-    background-color: #0e0e0e; /* Fondo oscuro para el header */
+    background-color: #0e0e0e; 
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    color: #f1f1f1; /* Texto blanco para el título */
+    color: #f1f1f1; 
     font-size: 2.5rem;
 }
+
 
 /* Separación entre header y contenido */
 main {
@@ -34,28 +32,6 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Sección de la imagen */
-#nasaData h2 {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-align: center; /* Centra el texto */
-}
-
-#nasaData p {
-    color: #cccccc;
-    font-size: 1.1rem;
-    margin-bottom: 20px; /* Mayor separación del texto "Imagen del día" */
-    text-align: center; /* Centra el párrafo */
-}
-
-/* Contenedor para centrar */
-#nasaData {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Centra todo el contenido horizontalmente */
-}
 
 /* Estilo para input de fecha y botón */
 input[type="date"], button {
@@ -110,10 +86,10 @@ input[type="date"]:focus {
 
 /* Contenedor de la imagen */
 
-#imageContainer, #nasaTitle {
+#nasaTitle {
     color: #ffffff; /* Blanco */
-    font-size: 1.5rem;
-    margin-bottom: 40px; /* Separar el título de la imagen */
+    /*font-size: 1.5rem;*/
+    margin-bottom: 28px; /* Separar el título de la imagen */
     text-align: center; /* Centrar el título */
 }
 
@@ -130,6 +106,14 @@ input[type="date"]:focus {
     font-size: 1rem;
     color: #bbbbbb; /* Texto gris suave */
     text-align: justify;
+}
+
+/* Contenedor para centrar */
+#nasaData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra todo el contenido horizontalmente */
 }
 
 /* Estilo del loader */
