@@ -1,0 +1,41 @@
+# Ignorar las claves API o archivos sensibles
+*.env
+apikey.js
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de editores
+*.swp
+*.swo
+*.idea/
+*.vscode/
+
+# Ignorar archivos de construcción
+dist/
+build/
+
+# Ignorar archivos de caché
+.cache/
+*.log
+
+# Otros archivos innecesarios
+*.bak
+*.tmp
+
+
+# Ignorar archivos y carpetas innecesarios
+.bash_history
+.gitconfig
+.lesshst
+.node_repl_history
+.cargo/

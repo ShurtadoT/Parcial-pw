@@ -1,0 +1,165 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b; /* Fondo negro */
+    color: #dcdcdc; /* Texto gris claro */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0e0e0e; /* Fondo oscuro para el header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #f1f1f1; /* Texto blanco para el título */
+    font-size: 2.5rem;
+}
+
+/* Separación entre header y contenido */
+main {
+    margin-top: 40px; /* Mayor separación entre header y sección de información */
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #222; /* Fondo ligeramente más claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de la imagen */
+#nasaData h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto */
+}
+
+#nasaData p {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 20px; /* Mayor separación del texto "Imagen del día" */
+    text-align: center; /* Centra el párrafo */
+}
+
+/* Contenedor para centrar */
+#nasaData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra todo el contenido horizontalmente */
+}
+
+/* Estilo para input de fecha y botón */
+input[type="date"], button {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+#datePicker
+{
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Diseño moderno del botón */
+button {
+    background-color: #555; /* Color gris más claro para el botón */
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #777; /* Color más claro al hacer hover */
+    transform: translateY(-2px); /* Leve animación de levantamiento */
+}
+
+/* Diseño del input de fecha */
+input[type="date"] {
+    padding: 10px 15px;
+    background-color: #444; /* Fondo gris oscuro */
+    color: #dcdcdc; /* Texto claro */
+    border: 1px solid #555; /* Borde gris más claro */
+    border-radius: 5px;
+    
+}
+
+input[type="date"]:focus {
+    border-color: #777; /* Borde más claro al hacer focus */
+}
+
+/* Contenedor de la imagen */
+#imageContainer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#nasaImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #555; /* Borde gris claro */
+}
+
+#nasaDescription {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #bbbbbb; /* Texto gris más suave */
+    text-align: justify;
+}
+
+/* Estilo del loader */
+.loader {
+    border: 8px solid #f3f3f3; /* Color de fondo del loader */
+    border-top: 8px solid #555; /* Color de la parte giratoria del loader */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto; /* Centrar el loader */
+    display: none; /* Oculto por defecto */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Asegúrate de que la imagen también esté centrada */
+#imageContainer {
+    display: flex;               /* Usamos flexbox para centrar contenido */
+    flex-direction: column;      /* Columna para alinear verticalmente */
+    justify-content: center;     /* Centrado vertical */
+    align-items: center;         /* Centrado horizontal */
+    min-height: 300px;           /* Altura mínima para el contenedor */
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #0e0e0e;
+    color: #888;
+}
